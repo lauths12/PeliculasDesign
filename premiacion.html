@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnicodeFlix</title>
+
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+
+    <link href="https://font.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel = "stylesheet"/>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+               <button class="navbar-menu-btn">
+                    <span></span><span></span><span></span>
+               </button>
+               <a href="#" class="navbar-brand">
+                    <img src="./assets/images/logo.png" style="width: 100px;">
+                </a>
+
+                <nav>
+                    <ul class="navbar-nav">
+                        <li><a href="index.html" class="navbar-link">Home</a></li>
+                        <li><a href="#category" class="navbar-link">Category</a></li>
+                        <li><a href="#plataforms" class="navbar-link">Plataforms</a></li>
+                        <li><a href="#actors" class="navbar-link">Actors</a></li>
+                        <li><a href="#awards" class="navbar-link">Awards</a></li>
+                        <li><a href="#reviews" class="navbar-link">Reviews</a></li>
+                        
+                    </ul>
+                </nav>
+
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="I'm looking for ..." 
+                        class="navbar-form-search">
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin">
+                        <span>Sign in</span>
+                        <ion-icon name="log-in-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+            <section class="banner">
+                <div class="banner-card">
+                    <img src="./assets/images/premiacion.jpg" class="banner-img" alt="">
+                    
+                    <div class="card-content">
+                        <div class="card-info"> 
+                            <div class="genre">
+                                <ion-icon name="film"></ion-icon>
+                                <span>Mejor Actor</span>
+                            </div>
+                            <div class="year">
+                                <ion-icon name="calendar"></ion-icon>
+                                <span>2021</span>
+                            </div>
+                        </div>
+
+                        <h2 class="card-title">Oscars Mejor Actor</h2>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="movies">
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre">
+                            <option value="all genres">Ordenar por</option>
+                            <option value="action">Nombre A-Z</option>
+                            <option value="adventure">Nombre Z-A</option>
+                        </select>
+                    </div>
+                    <div class="filter-radios">
+
+                        <input type="radio" name="grade" id="featured" checked>
+                        <label for="featured">Ganador</label>
+
+                        <input type="radio" name="grade" id="popular" checked>
+                        <label for="popular">Nominados</label>
+
+
+                        <div class="checked-radio-bg"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor1.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>6.4</span>
+                                </div>
+
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">Keanu Reeves</h3>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor2.webp" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.4</span>
+                                </div>
+
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">Brad Pitt</h3>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor3.avif" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>N/A</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Jason Statham</h3>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor4.webp" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>6.8</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Johnny Depp</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor5.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>8.2</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Dwayne Johnson</h3>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor6.avif" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>8.3</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Will Smith</h3>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./assets/images/actor7.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="bookmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.6</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Jamie Dornan</h3>
+                        </div>
+                    </div> 
+                </div>
+
+                <button class="load-more">LOAD MORE</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
